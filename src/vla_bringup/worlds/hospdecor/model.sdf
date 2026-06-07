@@ -1,0 +1,188 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <model name="hospdecor">
+
+    <!-- Static decoration -->
+    <static>true</static>
+
+    <!-- Lift model slightly -->
+    <pose>0 0 0.5 0 0 0</pose>
+
+    <!-- ================= BLOCK 1 ================= -->
+    <link name="block_1">
+      <pose>7.66 -0.43 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <box><size>2.8 1.4 1</size></box>
+        </geometry>
+        <material>
+          <ambient>0.6 0.2 1 1</ambient>
+          <diffuse>0.6 0.2 1 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box><size>2.8 1.4 1</size></box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ================= BLOCK 2 ================= -->
+    <link name="block_2">
+      <pose>-8.14 7.59 0 0 0 1.62</pose>
+      <visual name="visual">
+        <geometry>
+          <box><size>3.4 1.45 1.1</size></box>
+        </geometry>
+        <material>
+          <ambient>0 0 0.8 1</ambient>
+          <diffuse>0 0 0.8 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box><size>3.4 1.45 1.1</size></box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ================= BLOCK 3 ================= -->
+    <link name="block_3">
+      <pose>7.38 7.89 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <box><size>3.3 1.56 1</size></box>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box><size>3.3 1.56 1</size></box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ================= RED CYLINDER ================= -->
+    <link name="red_object">
+      <pose>0.23 7.61 0 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.5</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.5</radius>
+            <length>1</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ================= MAILBOX ================= -->
+    <link name="mailbox">
+      <pose>0 -8.5 0.6 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <box><size>0.6 0.4 0.8</size></box>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <box><size>0.6 0.4 0.8</size></box>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ================= TRASH CAN ================= -->
+    <link name="trash_can">
+      <pose>-5.15 -4.17 0.6 0 0 0</pose>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.35</radius>
+            <length>0.8</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.35</radius>
+            <length>0.8</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+<!-- ================= CURTAIN (FABRIC, NOT GLASS) ================= -->
+
+<!-- Fold 1 -->
+<link name="curtain_fold_1">
+  <pose>-5.7 5.6 0 0 0 0</pose>
+  <visual name="curtain_visual_1">
+    <geometry>
+      <box>
+        <size>0.45 0.01 2.4</size>
+      </box>
+    </geometry>
+    <material>
+      <ambient>0.7 0.8 1.0 1</ambient>
+      <diffuse>0.7 0.8 1.0 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+    </material>
+  </visual>
+</link>
+
+<!-- Fold 2 -->
+<link name="curtain_fold_2">
+  <pose>-6.05 5.61 0 0 0 0</pose>
+  <visual name="curtain_visual_2">
+    <geometry>
+      <box>
+        <size>0.45 0.01 2.4</size>
+      </box>
+    </geometry>
+    <material>
+      <ambient>0.65 0.75 0.95 1</ambient>
+      <diffuse>0.65 0.75 0.95 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+    </material>
+  </visual>
+</link>
+
+<!-- Fold 3 -->
+<link name="curtain_fold_3">
+  <pose>-6.5 5.6 0 0 0 0</pose>
+  <visual name="curtain_visual_3">
+    <geometry>
+      <box>
+        <size>0.45 0.01 2.4</size>
+      </box>
+    </geometry>
+    <material>
+      <ambient>0.7 0.8 1.0 1</ambient>
+      <diffuse>0.7 0.8 1.0 1</diffuse>
+      <specular>0.01 0.01 0.01 1</specular>
+    </material>
+  </visual>
+</link>
+
+<!-- NO COLLISION: robot passes through -->
+
+
+  </model>
+</sdf>
+
