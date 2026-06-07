@@ -3,8 +3,9 @@
 A Vision-Language-Action system that enables a mobile robot to understand 
 natural language commands and execute navigation tasks in a ROS 2 Gazebo 
 simulation. The system integrates a language module (Llama-3.3 70B via Groq API), 
-a vision module (HSV color segmentation), and a policy module (Nav2 navigation 
-+ visual servoing) to navigate toward colored objects in a hospital environment.
+a vision module (HSV color segmentation), and a policy module (Nav2 navigation + visual servoing) to navigate toward colored objects in a hospital environment.
+
+(https://github.com/saquibattar/VLA-Agent-for-Visual-Command-Execution-in-ROS-2-Simulation/blob/main/VLA-6AttIja-ezgif.com-video-to-gif-converter.gif)
 
 ---
 ## Author
